@@ -4,7 +4,10 @@
   "builds": [
     {
       "src": "src/app.js",
-      "use": "@now/static"
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "build"
+      }
     }
   ]
 }
