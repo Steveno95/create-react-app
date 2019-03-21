@@ -3,20 +3,8 @@
   "name": "front-end-example",
   "builds": [
     {
-      "src": "package.json",
-      "use": "@now/static-build",
-      "config": {
-        "distDir": "build"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "headers": {
-        "cache-control": "s-maxage=0"
-      },
-      "dest": "/index.html"
+      "src": "src/app.js",
+      "use": "@now/static"
     }
   ]
 }
