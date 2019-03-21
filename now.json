@@ -3,11 +3,8 @@
   "name": "front-end-example",
   "builds": [
     {
-      "src": "src/app.js",
-      "use": "@now/static-build",
-      "config": {
-        "distDir": "build"
-      }
+      "src": "app.js",
+      "use": "@now/static"
     }
   ]
 }
